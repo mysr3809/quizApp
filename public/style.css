@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Graduate', cursive;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(./images/space.gif);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(238, 42, 7);
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.centered {
+  height: 550px;
+  width: 700px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(161, 176, 176, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.context {
+  position: relative;
+  height: 95%;
+}
+
+.context h1 {
+  color: #ffb200;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.progress-number {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+}
+
+.context .progress {
+  background-color: #898a8b;
+}
+
+
+#next-question-button {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#next-question-button.btn-success {
+  background-color: #01924ff2;
+  border-color: #01924ff2;
+    
+}
+
+.nextButtonDiv {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 20%;
+}
+
+.startDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.scrollable {
+  height: auto;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.progress {
+  bottom: 35px;
+  position: absolute;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+#answers-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 0;
+  position: relative;
+  bottom: -25px;
+}
+
+#answers-list li {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: #8f7f6ded;
+  border-radius: 10px;
+
+}
+
+#answers-list li:hover {
+  background-color: #ffb200;
+  color: white;
+}
+
+.score-box {
+  color: white;
+  font-size: 20px;
+  width: 100%;
+}
+
+.finishScore {
+  font-family: 'Graduate', cursive;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.faillColor {
+  color: #ff0000bd;
+}
+
+.successColor {
+  color: #01924ff2;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+#tryAgain {
+  margin-top: 15px;
+}
+
+.startGif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
